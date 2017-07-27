@@ -47,8 +47,11 @@ export const App = () => (
       <div><small className="text-muted">Free <Pizza /> on us</small></div>
     </section>
     <footer>
-      &copy; 2017 -
-      Box 5661, Santa Monica, CA 90409
+      <ul className="list-unstyled">
+        <li>&copy; 2017</li>
+        <li>Box 5661, Santa Monica, CA 90409</li>
+        <li><a href="https://github.com/elwoodspizza">GitHub</a></li>
+      </ul>
     </footer>
   </div>
 )

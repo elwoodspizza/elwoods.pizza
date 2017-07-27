@@ -123,19 +123,20 @@ h2 {
   ul {
     margin-bottom: 3rem;
   }
+}
 
-  li {
-    display: inline;
-    padding-right: .5rem;
-    font-size: .9rem;
 
-    &:after {
-      content: "\2022";
-      margin-left: .5rem;
-    }
-    &:last-child:after {
-      display: none;
-    }
+li {
+  display: inline;
+  padding-right: .5rem;
+  font-size: .9rem;
+
+  &:after {
+    content: "\2022";
+    margin-left: .5rem;
+  }
+  &:last-child:after {
+    display: none;
   }
 }
 
@@ -144,4 +145,8 @@ footer {
   padding: 1rem;
   font-size: .8rem;
   color: #999;
+
+  a {
+    color: #999;
+  }
 }

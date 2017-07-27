@@ -13,7 +13,8 @@
 <br />
 
 ## We should talk
-<a href="mailto:hello@elwoods.pizza">hello@elwoods.pizza</a>
+Free :pizza: on us! --
+<a href="mailto:hello@elwoods.pizza"><strong>hello@elwoods.pizza</strong></a>
 
 ## What we do
  * PHP
