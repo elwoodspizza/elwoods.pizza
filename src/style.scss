@@ -1,0 +1,147 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+$text-color: #333;
+$higlight-color: rgb(190, 0, 0);
+$logo-color: #222;
+
+html, body {
+  background: #fff;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, #fafafa, #fff);
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+}
+
+a {
+  transition: color .3s ease-in;
+  outline: none !important;
+
+  &:hover {
+    text-decoration: none;
+    color: $higlight-color;
+  }
+}
+
+header {
+  $line-height: 2rem;
+
+  text-align: center;
+  padding: 1rem 0;
+  font-size: $line-height;
+  position: relative;
+  line-height: $line-height;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+
+  a.email {
+    position: absolute;
+    right: 15px;
+    font-size: .8rem;
+    line-height: $line-height;
+    color: #ccc;
+
+    &:hover {
+      color: $higlight-color;
+    }
+
+    svg {
+      position: relative;
+      top: -1px;
+      margin-right: .2rem;
+    }
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 95vh;
+  text-align: center;
+
+  small {
+    color: lighten($logo-color, 60);
+  }
+}
+
+h1 {
+  font-weight: 600;
+  color: $logo-color;
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: lighten($logo-color, 30);
+}
+
+.pizza-strip {
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  font-size: 5rem;
+  position: relative;
+  border-bottom: solid 1px #eee;
+
+  span {
+    position: absolute;
+  }
+}
+
+.talk {
+  text-align: center;
+  padding: 8rem 15px;
+
+  .btn {
+    border: none;
+    box-shadow: #777 0 0 1px;
+    color: #777;
+    font-weight: 600;
+    font-size: 1rem;
+
+    svg {
+      position: relative;
+      top: -2px;
+      margin-right: .5rem;
+    }
+
+    &:hover, &:focus {
+      color: #fff;
+      background: $higlight-color;
+      box-shadow: none;
+    }
+  }
+
+  ul {
+    margin-bottom: 3rem;
+  }
+
+  li {
+    display: inline;
+    padding-right: .5rem;
+    font-size: .9rem;
+
+    &:after {
+      content: "\2022";
+      margin-left: .5rem;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: .8rem;
+  color: #999;
+}

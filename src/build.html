@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Santa Monica, California Software Development &amp; Consulting">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Elwoods Pizza | Software Development &amp; Consulting">
+    <meta property="og:description" content="Santa Monica, California Software Development &amp; Consulting">
+    <meta property="og:type" content="website">
+    <title>Elwoods Pizza | Software Development &amp; Consulting | Santa Monica, California</title>
+  	<link rel="apple-touch-icon" href="/icon.png">
+  </head>
+  <body>
+    <div id="root">
+      <%= htmlWebpackPlugin.options.renderHTML() %>
+    </div>
+    <script>window.onload = function() { ElwoodsPizza.render(document.getElementById('root')); } </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-123654-14', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
