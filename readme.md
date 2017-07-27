@@ -1,11 +1,11 @@
 <p align="center">
   <a href="https://elwoods.pizza/">
-    <img alt="Elwoods Pizza" src="https://raw.githubusercontent.com/elwoodspizza/elwoods.pizza/master/icon.png">
+    <img alt="Elwood's Pizza" src="https://raw.githubusercontent.com/elwoodspizza/elwoods.pizza/master/icon.png">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://elwoods.pizza/"><strong>Elwoods Pizza</strong></a><br />
+  <a href="https://elwoods.pizza/"><strong>Elwood's Pizza</strong></a><br />
   Software Development &amp; Consulting<br />
   <small>Santa Monica, CA</small><br />
 </p>

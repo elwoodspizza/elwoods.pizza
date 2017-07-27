@@ -30,7 +30,7 @@ export const App = () => (
       <Pizza />
     </header>
     <main>
-      <h1>Elwoods Pizza</h1>
+      <h1>Elwood&#39;s Pizza</h1>
       <h2>Software Development &amp; Consulting</h2>
     </main>
     <section className="pizza-strip">
@@ -39,7 +39,7 @@ export const App = () => (
       ))}
     </section>
     <section className="talk container">
-      <h3>Let's talk about how we can help with...</h3>
+      <h3>Let&#39;s talk about how we can help with...</h3>
       <ul className="list-unstyled">
         {whatWeDo.map(what => <li>{what}</li>)}
       </ul>
