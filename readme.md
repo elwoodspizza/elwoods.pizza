@@ -5,17 +5,17 @@
 </p>
 
 <p align="center">
-  <strong style="font-size: 2rem;">Elwoods Pizza</strong><br />
+  <a href="https://elwoods.pizza/"><strong>Elwoods Pizza</strong></a><br />
   Software Development &amp; Consulting<br />
-  <small>Santa Monica, CA</small>
+  <small>Santa Monica, CA</small><br />
 </p>
 
----
+<br />
 
 ## We should talk
 <a href="mailto:hello@elwoods.pizza">hello@elwoods.pizza</a>
 
-## What we do:
+## What we do
  * PHP
  * React & React Native
  * GraphQL
