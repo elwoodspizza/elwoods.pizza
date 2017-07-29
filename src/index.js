@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDom from 'react-dom'
 
 import EmailIcon from 'react-icons/lib/fa/envelope'
+import GithubIcon from 'react-icons/lib/fa/github'
+import AngelListIcon from 'react-icons/lib/fa/angellist'
 
 import './style.scss'
 
@@ -50,8 +52,11 @@ export const App = () => (
       <ul className="list-unstyled">
         <li>&copy; 2017</li>
         <li>Box 5661, Santa Monica, CA 90409</li>
-        <li><a href="https://github.com/elwoodspizza">GitHub</a></li>
       </ul>
+      <div>
+        <a href="https://github.com/elwoodspizza"><GithubIcon /><span className="sr-only">GitHub</span></a>
+        <a href="https://angel.co/elwood-s-pizza"><AngelListIcon /><span className="sr-only">AngelList</span></a>
+      </div>
     </footer>
   </div>
 )
