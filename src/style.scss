@@ -122,6 +122,14 @@ h2 {
 
   ul {
     margin-bottom: 3rem;
+
+    li:first-child {
+      font-weight: 600;
+
+      &:after {
+        display: none;
+      }
+    }
   }
 }
 

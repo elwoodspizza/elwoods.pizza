@@ -41,8 +41,9 @@ export const App = () => (
       ))}
     </section>
     <section className="talk container">
-      <h3>Let&#39;s talk about how we can help with...</h3>
+      <h3>Let&#39;s talk... <small>and eat pizza!</small></h3>
       <ul className="list-unstyled">
+        <li>What we do:</li>
         {whatWeDo.map(what => <li>{what}</li>)}
       </ul>
       <a className="btn btn-lg" href="mailto:hello@elwoods.pizza"><EmailIcon /> hello@elwoods.pizza</a>
