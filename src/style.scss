@@ -12,7 +12,6 @@ html, body {
 .app {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(0deg, #fafafa, #fff);
   font-family: 'Open Sans', sans-serif;
   color: $text-color;
 }
@@ -27,48 +26,62 @@ a {
   }
 }
 
-header {
-  $line-height: 2rem;
-
-  text-align: center;
-  padding: 1rem 0;
-  font-size: $line-height;
-  position: relative;
-  line-height: $line-height;
-  background: #fff;
-  position: fixed;
-  width: 100%;
-
-  a.email {
-    position: absolute;
-    right: 15px;
-    font-size: .8rem;
-    line-height: $line-height;
-    color: #ccc;
-
-    &:hover {
-      color: $higlight-color;
-    }
-
-    svg {
-      position: relative;
-      top: -1px;
-      margin-right: .2rem;
-    }
-  }
+.container {
+  max-width: 700px;
 }
 
 main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-grow: 1;
-  height: 95vh;
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(0deg, #fff 50%, #f9f9f9);
 
-  small {
-    color: lighten($logo-color, 60);
+  section:first-child {
+    max-width: 500px;
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      background: #f3f3f3;
+      margin-top: 2rem;
+      color: #999;
+      font-size: .9rem;
+
+      svg {
+        margin-right: .5rem;
+      }
+
+      &:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+  }
+
+  section:last-child {
+    z-index: 0;
+    transition: transform .3s ease-in;
+
+    div {
+      border-radius: 100%;
+      padding: 2rem;
+      box-shadow: rgba(150, 150, 150, .1) 0 0 400px 100px;
+      background: rgba(150, 150, 150, .1);
+    }
+    span {
+      display: inline-block;
+    }
+  }
+
+  &:hover section:last-child {
+    transform: scale(1.2);
   }
 }
 
@@ -81,94 +94,96 @@ h1 {
 h2 {
   font-size: 1.3rem;
   color: lighten($logo-color, 30);
-}
-
-.pizza-strip {
-  width: 100%;
-  height: 4rem;
-  overflow: hidden;
-  font-size: 5rem;
-  position: relative;
-  border-bottom: solid 1px #eee;
-
-  span {
-    position: absolute;
-  }
+  margin: 0;
 }
 
 .talk {
-  text-align: center;
-  padding: 8rem 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 
-  .btn {
-    border: none;
-    box-shadow: #777 0 0 1px;
-    color: #777;
-    font-weight: 600;
-    font-size: 1rem;
+  div {
+    border-radius: 2px;
+    transition: box-shadow .3s ease-in;
+    max-width: 700px;
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    padding: 2.5% 5%;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 20px;
+    margin-top: 0%;
+    text-align: center;
 
-    svg {
-      position: relative;
-      top: -2px;
-      margin-right: .5rem;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, .2) 0 0 40px;
     }
+  }
 
-    &:hover, &:focus {
-      color: #fff;
-      background: $higlight-color;
-      box-shadow: none;
-    }
+  h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: .9rem;
+    color: #666;
   }
 
   ul {
-    margin-bottom: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    border-top: solid 1px #eee;
 
-    li:first-child {
-      font-weight: 600;
-
-      &:after {
-        display: none;
-      }
+    li {
+      flex: 1 50%;
+      padding-bottom: .5rem;
     }
   }
-}
 
-
-li {
-  display: inline;
-  padding-right: .5rem;
-  font-size: .9rem;
-
-  &:after {
-    content: "\2022";
-    margin-left: .5rem;
+  h3, h4, ul {
+    text-align: left;
   }
-  &:last-child:after {
-    display: none;
+
+  .btn {
+    border: solid 1px #eee;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      margin-right: .5rem;
+    }
+  }
+
+  &:before {
+    content: '';
+    z-index: 0;
+    width: 100%;
+    height: 80%;
+    background: #f0f0f0;
+    opacity: .5;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transform: skewy(-1deg);
   }
 }
 
 footer {
+  margin-top: 10rem;
   text-align: center;
-  padding: 1rem;
-  font-size: .8rem;
   color: #999;
+  font-size: .8rem;
+  padding-bottom: 1rem;
 
   ul {
-    margin-bottom: .25rem;
-    padding: 0;
+    margin: 0;
   }
 
   a {
     color: #999;
-
-  }
-
-  div {
-    font-size: 1.3rem;
-
-    a {
-      margin: 0 .25rem;
-    }
   }
 }
