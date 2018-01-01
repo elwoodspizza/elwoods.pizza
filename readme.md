@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://elwoods.pizza/">
-    <img alt="Elwood's Pizza" src="https://raw.githubusercontent.com/elwoodspizza/elwoods.pizza/master/icon.png">
+  <a href="https://elwood.technology/">
+    <img alt="Elwood Technology, LLC" src="https://raw.githubusercontent.com/elwoodtechnology/elwood.technology/master/icon.png">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://elwoods.pizza/"><strong>Elwood's Pizza</strong></a><br />
+  <a href="https://elwood.technology/"><strong>Elwood Technology</strong></a><br />
   Software Development &amp; Consulting<br />
   <small>Santa Monica, CA</small><br />
 </p>
@@ -14,7 +14,7 @@
 
 ## We should talk
 Free :pizza: on us! --
-<a href="mailto:hello@elwoods.pizza"><strong>hello@elwoods.pizza</strong></a>
+<a href="mailto:hello@elwood.technology"><strong>hello@elwood.technology</strong></a>
 
 ## What we do
  * PHP
