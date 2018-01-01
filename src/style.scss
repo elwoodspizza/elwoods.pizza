@@ -187,3 +187,43 @@ footer {
     color: #999;
   }
 }
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-flow: column nowrap;
+
+    section {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    section:first-child {
+      order: 2;
+      flex-grow: 2;
+    }
+
+    section:last-child {
+      order: 1;
+    }
+  }
+
+  .talk {
+    div {
+      box-shadow: none;
+      background: transparent;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    ul li {
+      flex: 1 100%;
+    }
+
+    &:before {
+      top: -10%;
+      height: 120%;
+      transform: skewy(-5deg);
+    }
+  }
+}
