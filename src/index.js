@@ -4,6 +4,7 @@ import ReactDom from 'react-dom'
 import EmailIcon from 'react-icons/lib/fa/envelope'
 import GithubIcon from 'react-icons/lib/fa/github'
 import AngelListIcon from 'react-icons/lib/fa/angellist'
+import TwitterIcon from 'react-icons/lib/fa/twitter'
 
 import './style.scss'
 
@@ -32,7 +33,7 @@ export const App = () => (
     <section className="talk">
       <div>
         <h3>Let&#39;s talk... <small>and eat pizza!</small></h3>
-        <h4>Here&#39;s what we do</h4>
+        <h4>Here are a few of the things what we do</h4>
         <ul className="list-unstyled">
           {whatWeDo.map(what => <li>{what}</li>)}
         </ul>
@@ -41,12 +42,13 @@ export const App = () => (
     </section>
     <footer>
       <ul className="list-unstyled">
-        <li>&copy; 2018</li>
+        <li>&copy; 2018, Elwood Technology, LLC</li>
         <li>Box 5661, Santa Monica, CA 90409</li>
       </ul>
       <div>
         <a href="https://github.com/elwoodtechnology"><GithubIcon /><span className="sr-only">GitHub</span></a>
-        <a href="https://angel.co/elwood-s-pizza"><AngelListIcon /><span className="sr-only">AngelList</span></a>
+        <a href="https://angel.co/elwood-technology"><AngelListIcon /><span className="sr-only">AngelList</span></a>
+        <a href="https://twitter.com/helloelwoodtech"><TwitterIcon /><span className="sr-only">Twitter</span></a>
       </div>
     </footer>
   </div>
