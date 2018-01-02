@@ -9,8 +9,8 @@ import TwitterIcon from 'react-icons/lib/fa/twitter'
 import './style.scss'
 
 const whatWeDo = [
-  'PHP',
   'React & React Native',
+  'PHP',
   'GraphQL',
   'Node.js',
   'iOS (Objective-C & Swift)',
@@ -32,8 +32,8 @@ export const App = () => (
     </main>
     <section className="talk">
       <div>
-        <h3>Let&#39;s talk... <small>and eat pizza!</small></h3>
-        <h4>Here are a few of the things what we do</h4>
+        <h3>Let&#39;s talk... <small>and maybe eat pizza!</small></h3>
+        <h4>Here are a few of the things we sepcialize in:</h4>
         <ul className="list-unstyled">
           {whatWeDo.map(what => <li>{what}</li>)}
         </ul>
