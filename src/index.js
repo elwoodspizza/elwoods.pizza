@@ -48,7 +48,7 @@ export const App = () => (
       <div>
         <a href="https://github.com/elwoodtechnology"><GithubIcon /><span className="sr-only">GitHub</span></a>
         <a href="https://angel.co/elwood-technology"><AngelListIcon /><span className="sr-only">AngelList</span></a>
-        <a href="https://twitter.com/helloelwoodtech"><TwitterIcon /><span className="sr-only">Twitter</span></a>
+        <a href="https://twitter.com/hello_elwood"><TwitterIcon /><span className="sr-only">Twitter</span></a>
       </div>
     </footer>
   </div>
