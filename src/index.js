@@ -49,7 +49,7 @@ export const App = () => (
         <li>Box 5661, Santa Monica, CA 90409</li>
       </ul>
       <div>
-        <a href="https://github.com/elwoodtechnology"><GithubIcon /><span className="sr-only">GitHub</span></a>
+        <a href="https://github.com/elwood-technology"><GithubIcon /><span className="sr-only">GitHub</span></a>
         <a href="https://twitter.com/hello_elwood"><TwitterIcon /><span className="sr-only">Twitter</span></a>
         <a href="https://www.facebook.com/elwood.technology"><FacebookIcon /><span className="sr-only">Facebook</span></a>
         <a href="https://angel.co/elwood-technology"><AngelListIcon /><span className="sr-only">AngelList</span></a>
