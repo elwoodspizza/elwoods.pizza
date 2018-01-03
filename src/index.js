@@ -17,7 +17,8 @@ const whatWeDo = [
   'Node.js',
   'iOS (Objective-C & Swift)',
   'Java & Android',
-  'System Architecture'
+  'System Architecture',
+  'Content Management Systems'
 ]
 
 export const App = () => (

@@ -6,7 +6,7 @@ $higlight-color: rgb(190, 0, 0);
 $logo-color: #222;
 
 html, body {
-  background: #fff;
+  background: #f9f9f9;
 }
 
 .app {
@@ -42,6 +42,7 @@ main {
   flex-grow: 1;
   height: 100vh;
   width: 100vw;
+  background-color: #fff;
   background-image: linear-gradient(0deg, #fff 50%, #f9f9f9);
 
   section:first-child {
@@ -74,10 +75,27 @@ main {
     transition: transform .3s ease-in;
 
     div {
-      border-radius: 100%;
-      padding: 2rem;
-      box-shadow: rgba(150, 150, 150, .1) 0 0 400px 100px;
-      background: rgba(150, 150, 150, .1);
+
+      position: relative;
+
+      &:before {
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        background: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -5px 0 0 -5px;
+        border-radius: 100%;
+        box-shadow: rgba(100, 100, 100, .1) 0 0 400px 100px;
+        z-index: 1;
+      }
+
+      img {
+        position: relative;
+        z-index: 2;
+      }
     }
     span {
       display: inline-block;
@@ -105,6 +123,7 @@ h2 {
   position: relative;
   display: flex;
   justify-content: center;
+  background: #fff;
 
   div {
     border-radius: 2px;
@@ -124,8 +143,12 @@ h2 {
   }
 
   h3 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.6rem;
+
+    small {
+      font-weight: 300;
+    }
   }
 
   h4 {
@@ -177,11 +200,12 @@ h2 {
 }
 
 footer {
-  margin-top: 10rem;
+  padding-top: 10rem;
   text-align: center;
   color: #999;
   font-size: .8rem;
   padding-bottom: 1rem;
+  background: #fff;
 
   ul {
     margin: 0;
@@ -198,6 +222,7 @@ footer {
 @media screen and (max-width: 700px) {
   main {
     flex-flow: column nowrap;
+    height: auto;
 
     section {
       width: 100%;
@@ -208,19 +233,33 @@ footer {
     section:first-child {
       order: 2;
       flex-grow: 2;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
 
     section:last-child {
       order: 1;
+      padding: 2rem 0;
+
+      div {
+        box-shadow: none;
+        background: transparent;
+      }
     }
   }
 
   .talk {
+    margin-top: 30%;
+
     div {
       box-shadow: none;
       background: transparent;
       padding-left: 2rem;
       padding-right: 2rem;
+
+      &:hover {
+        box-shadow: none;
+      }
     }
 
     ul li {
