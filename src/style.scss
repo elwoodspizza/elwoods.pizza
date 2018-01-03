@@ -223,6 +223,7 @@ footer {
   main {
     flex-flow: column nowrap;
     height: auto;
+    padding-bottom: 30%;
 
     section {
       width: 100%;
@@ -249,7 +250,6 @@ footer {
   }
 
   .talk {
-    margin-top: 30%;
 
     div {
       box-shadow: none;
@@ -266,10 +266,18 @@ footer {
       flex: 1 100%;
     }
 
+    .btn {
+      background-color: #fff;
+    }
+
     &:before {
       top: -10%;
       height: 120%;
-      transform: skewy(-5deg);
+      transform: skewy(-4deg);
     }
+  }
+
+  footer {
+    padding-bottom: 4rem;
   }
 }

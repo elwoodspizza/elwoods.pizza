@@ -36,7 +36,7 @@ export const App = () => (
     <section className="talk">
       <div>
         <h3>Let&#39;s talk... <small>and maybe eat pizza!</small></h3>
-        <h4>Here are a few of the things we sepcialize in:</h4>
+        <h4>Here are a few of the things we specialize in:</h4>
         <ul className="list-unstyled">
           {whatWeDo.map(what => <li>{what}</li>)}
         </ul>
