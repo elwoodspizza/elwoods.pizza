@@ -110,6 +110,7 @@ if (isProd) {
     new HtmlWebpackPlugin({
       minify: {},
       template: path.join(srcDir, 'index.html'),
+      chunks: ['index'],
       renderHTML() {
         return require('./src/render')();
       },
@@ -121,6 +122,7 @@ if (isProd) {
       minify: {},
       filename: 'hello.html',
       template: path.join(srcDir, 'hello.html'),
+      chunks: ['hello'],
       renderHTML() {
         return require('./src/render')('hello');
       },
