@@ -11,6 +11,15 @@ const rootDir = __dirname
 const srcDir = path.join(rootDir, 'src')
 const nodeModulesPath = path.join(rootDir, 'node_modules')
 
+const GA = `<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-123654-14', 'auto');
+  ga('send', 'pageview');
+</script>`;
+
 const useSass = isProd ? ExtractTextPlugin.extract({
   fallback: 'style-loader',
   use: ['css-loader', 'sass-loader']
@@ -25,10 +34,16 @@ const config = {
   target: 'web',
   cache: true,
   devtool: 'eval-cheap-module-source-map',
-  entry: [
-    'babel-polyfill',
-    './src/index.js'
-  ],
+  entry: {
+    index: [
+      'babel-polyfill',
+      './src/index.js'
+    ],
+    hello: [
+      'babel-polyfill',
+      './src/hello.js'
+    ]
+  },
   devServer: {
     contentBase: srcDir,
     historyApiFallback: true,
@@ -39,7 +54,7 @@ const config = {
   ],
   output: {
     publicPath: '/',
-    filename: 'bundle.js',
+    filename: '[name].js',
     chunkFilename: '[name].js',
     library: 'ElwoodsPizza',
     libraryTarget: 'var'
@@ -80,7 +95,7 @@ const config = {
 }
 
 if (isProd) {
-  config.output.filename = 'elwoods-pizza-[hash].js';
+  config.output.filename = 'elwoods-pizza-[name]-v[hash].js';
   config.output.publicPath = '/build/';
   config.output.path = path.join(rootDir, './build');
   config.output.crossOriginLoading = 'anonymous';
@@ -94,9 +109,23 @@ if (isProd) {
     }),
     new HtmlWebpackPlugin({
       minify: {},
-      template: path.join(srcDir, 'build.html'),
+      template: path.join(srcDir, 'index.html'),
       renderHTML() {
         return require('./src/render')();
+      },
+      endHTML() {
+        return GA
+      }
+    }),
+    new HtmlWebpackPlugin({
+      minify: {},
+      filename: 'hello.html',
+      template: path.join(srcDir, 'hello.html'),
+      renderHTML() {
+        return require('./src/render')('hello');
+      },
+      endHTML() {
+        return GA
       }
     }),
     new WebpackSRI({
@@ -107,6 +136,29 @@ if (isProd) {
 }
 else {
   config.plugins.push(new webpack.HotModuleReplacementPlugin());
+  config.plugins.push(
+    new HtmlWebpackPlugin({
+      template: path.join(srcDir, 'index.html'),
+      chunks: ['index'],
+      renderHTML() {
+        return '';
+      },
+      endHTML() {
+        return '';
+      }
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(srcDir, 'hello.html'),
+      filename: 'hello.html',
+      chunks: ['hello'],
+      renderHTML() {
+        return '';
+      },
+      endHTML() {
+        return '';
+      }
+    }),
+  )
 }
 
 module.exports = config;

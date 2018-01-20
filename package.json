@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "dist": "rm -rf ./build && NODE_ENV=production webpack -p && mv ./build/index.html ."
+    "dist": "rm -rf ./build && NODE_ENV=production webpack -p && mv ./build/*.html ."
   },
   "dependencies": {
     "babel-cli": "^6.18.0",

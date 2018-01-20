@@ -45,22 +45,24 @@ main {
   background-color: #fff;
   background-image: linear-gradient(0deg, #fff 50%, #f9f9f9);
 
-  section:first-child {
+  .text {
     max-width: 500px;
     flex-grow: 1;
     position: relative;
     z-index: 1;
 
-    a {
+    .btn {
       display: inline-flex;
       align-items: center;
       background: #f3f3f3;
       margin-top: 2rem;
       color: #999;
       font-size: .9rem;
+      margin-right: .5rem;
 
-      svg {
-        margin-right: .5rem;
+      span {
+        display: inline-block;
+        margin-left: .5rem;
       }
 
       &:hover {
@@ -70,7 +72,7 @@ main {
     }
   }
 
-  section:last-child {
+  .logo {
     z-index: 0;
     transition: transform .3s ease-in;
 
@@ -100,10 +102,10 @@ main {
     span {
       display: inline-block;
     }
-  }
 
-  &:hover section:last-child {
-    transform: scale(1.2);
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -279,5 +281,69 @@ footer {
 
   footer {
     padding-bottom: 4rem;
+  }
+}
+
+
+.hello {
+  background: #eee;
+
+  main {
+    margin-right: 360px;
+    width: calc(100vw - 360px);
+    background: #fff;
+    flex-direction: column;
+  }
+
+  section {
+    display: flex;
+    white-space: nowrap;
+  }
+
+  .btn {
+    margin-bottom: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: #999;
+
+    svg {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background: #eee;
+      color: #333;
+    }
+  }
+
+  .btn-outline-secondary {
+    border: solid 1px #eee;
+  }
+
+  .logo {
+    width: 75px;
+    margin-right: .5rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: #666;
+    font-weight: 400;
+
+    strong {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #333;
+    }
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 3rem;
   }
 }
