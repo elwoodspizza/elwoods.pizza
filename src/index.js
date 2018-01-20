@@ -24,12 +24,12 @@ const whatWeDo = [
 export const App = () => (
   <div className="app">
     <main>
-      <section>
+      <section className="text">
         <h1>Elwood Technology</h1>
         <h2>Software Development &amp; Consulting</h2>
         <a className="btn btn-lg" href="mailto:hello@elwood.technology"><EmailIcon /> hello@elwood.technology</a>
       </section>
-      <section>
+      <section className="logo">
         <div><img src="https://elwood.technology/icon.png" alt="Pizza" /></div>
       </section>
     </main>
