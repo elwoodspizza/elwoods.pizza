@@ -9,6 +9,7 @@ import SlackIcon from 'react-icons/lib/fa/slack'
 import PhoneIcon from 'react-icons/lib/fa/phone'
 
 import Footer from './footer'
+import WeDo from './we-do'
 
 import './style.scss'
 
@@ -60,14 +61,14 @@ export const App = () => (
             <li>
               <a rel="noopener" href="tel:+14198625845" className="btn btn-block">
                 <PhoneIcon />
-                Call Us on the Phone (like it's 1999)
+                Call Us (like it's 1999)
               </a>
             </li>
           </ol>
         </aside>
       </section>
     </main>
-
+    <WeDo showEmailButton={false} />
     <Footer />
   </div>
 )

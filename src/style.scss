@@ -65,6 +65,12 @@ main {
         margin-left: .5rem;
       }
 
+      &.e {
+        svg {
+          margin-right: .5rem;
+        }
+      }
+
       &:hover {
         background-color: #333;
         color: #fff;
@@ -298,6 +304,10 @@ footer {
   section {
     display: flex;
     white-space: nowrap;
+  }
+
+  section.talk {
+    margin-right: 360px;
   }
 
   .btn {

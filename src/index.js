@@ -7,19 +7,10 @@ import AngelListIcon from 'react-icons/lib/fa/angellist'
 import TwitterIcon from 'react-icons/lib/fa/twitter'
 import LinkedInIcon from 'react-icons/lib/fa/linkedin'
 import FacebookIcon from 'react-icons/lib/fa/facebook'
+import MessageIcon from 'react-icons/lib/fa/comment'
 
+import WeDo from './we-do'
 import './style.scss'
-
-const whatWeDo = [
-  'React & React Native',
-  'PHP',
-  'GraphQL',
-  'Node.js',
-  'iOS (Objective-C & Swift)',
-  'Java & Android',
-  'System Architecture',
-  'Content Management Systems'
-]
 
 export const App = () => (
   <div className="app">
@@ -27,22 +18,16 @@ export const App = () => (
       <section className="text">
         <h1>Elwood Technology</h1>
         <h2>Software Development &amp; Consulting</h2>
-        <a className="btn btn-lg" href="mailto:hello@elwood.technology"><EmailIcon /> hello@elwood.technology</a>
+        <a className="btn btn-lg e" href="mailto:hello@elwood.technology"><EmailIcon /> hello@elwood.technology</a>
+        <a className="btn btn-lg" href="/hello.html"><MessageIcon /></a>
       </section>
       <section className="logo">
         <div><img src="https://elwood.technology/icon.png" alt="Pizza" /></div>
       </section>
     </main>
-    <section className="talk">
-      <div>
-        <h3>Let&#39;s talk... <small>and maybe eat pizza!</small></h3>
-        <h4>Here are a few of the things we specialize in:</h4>
-        <ul className="list-unstyled">
-          {whatWeDo.map(what => <li>{what}</li>)}
-        </ul>
-        <a className="btn" href="mailto:hello@elwood.technology"><EmailIcon /> hello@elwood.technology</a>
-      </div>
-    </section>
+    <WeDo>
+      <h3>Let&#39;s talk... <small>and maybe eat pizza!</small></h3>
+    </WeDo>
     <footer>
       <ul className="list-unstyled">
         <li>&copy; 2018, Elwood Technology, LLC</li>
