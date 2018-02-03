@@ -42,7 +42,7 @@ const opts = [
 ]
 
 export const App = () => (
-  <div className="app hello">
+  <div className="hello">
     <main>
       <section>
         <div className="logo"><img src="https://elwood.technology/icon.png" alt="Pizza" /></div>
