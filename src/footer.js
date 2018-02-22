@@ -15,7 +15,7 @@ const Footer = () => (
     </ul>
     <div itemScope itemType="http://schema.org/Organization">
       <link itemProp="url" href="https://elwood.technology" />
-      <a itemProp="sameAs" href="https://github.com/elwoodtechnology"><GithubIcon /><span className="sr-only">GitHub</span></a>
+      <a itemProp="sameAs" href="https://github.com/elwood-technology"><GithubIcon /><span className="sr-only">GitHub</span></a>
       <a itemProp="sameAs" href="https://twitter.com/hello_elwood"><TwitterIcon /><span className="sr-only">Twitter</span></a>
       <a itemProp="sameAs" href="https://www.facebook.com/elwood.technology"><FacebookIcon /><span className="sr-only">Facebook</span></a>
       <a itemProp="sameAs" href="https://angel.co/elwood-technology"><AngelListIcon /><span className="sr-only">AngelList</span></a>
