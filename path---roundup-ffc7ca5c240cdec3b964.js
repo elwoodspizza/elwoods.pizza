@@ -1,0 +1,2 @@
+webpackJsonp([9975957086944],{405:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Elwood Technology | Software Development &amp; Consulting | hello@elwood.technology | Santa Monica, California"}},allMarkdownRemark:{edges:[{node:{excerpt:"This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…",fields:{slug:"/roundup/02-23-2018/"},frontmatter:{date:"01 May, 2015",title:"Hello World"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---roundup-ffc7ca5c240cdec3b964.js.map

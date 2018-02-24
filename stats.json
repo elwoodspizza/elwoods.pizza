@@ -1,0 +1,72 @@
+{
+  "assetsByChunkName": {
+    "path---roundup": [
+      "path---roundup-ffc7ca5c240cdec3b964.js",
+      "path---roundup-ffc7ca5c240cdec3b964.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-816f0d57076db96a7180.js",
+      "component---src-pages-index-js-816f0d57076db96a7180.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---pizza": [
+      "path---pizza-a0e39f21c11f6a62c5ab.js",
+      "path---pizza-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---hello": [
+      "path---hello-a0e39f21c11f6a62c5ab.js",
+      "path---hello-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-b92fb00d785a4cf593cb.js",
+      "component---src-layouts-index-js-b92fb00d785a4cf593cb.js.map"
+    ],
+    "component---src-pages-pizza-js": [
+      "component---src-pages-pizza-js-59ad26744389e4ec8419.js",
+      "component---src-pages-pizza-js-59ad26744389e4ec8419.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-hello-js": [
+      "component---src-pages-hello-js-75e1337a7fbc4ccd9c59.js",
+      "component---src-pages-hello-js-75e1337a7fbc4ccd9c59.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-251d275fdf442177b67f.js",
+      "commons-251d275fdf442177b67f.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-roundup-index-js": [
+      "component---src-pages-roundup-index-js-71181904c04e3c854968.js",
+      "component---src-pages-roundup-index-js-71181904c04e3c854968.js.map"
+    ],
+    "path---roundup-02-23-2018": [
+      "path---roundup-02-23-2018-65a1044033701c3a618f.js",
+      "path---roundup-02-23-2018-65a1044033701c3a618f.js.map"
+    ],
+    "app": [
+      "app-00577368549370fb5e79.js",
+      "app-00577368549370fb5e79.js.map"
+    ],
+    "component---src-templates-roundup-js": [
+      "component---src-templates-roundup-js-ddab0ece55de296bd56c.js",
+      "component---src-templates-roundup-js-ddab0ece55de296bd56c.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
