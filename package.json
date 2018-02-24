@@ -1,17 +1,14 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "elwood-technology",
+  "description": "Elwood Technology website",
   "version": "0.3.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Travis Kuhl <travis.kuhl@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.207",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "react-helmet": "^5.2.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
