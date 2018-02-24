@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import EmailIcon from 'react-icons/lib/fa/envelope'
+import './style.scss'
 
 const whatWeDo = [
   'React & React Native',
@@ -17,14 +18,14 @@ const whatWeDo = [
 ]
 
 const WeDo = ({ children, showEmailButton }) => (
-  <section className="talk">
+  <section className="c-we-do">
     <div>
       {children}
       <h4>Here are a few of the things we specialize in:</h4>
       <ul className="list-unstyled">
         {whatWeDo.map(what => <li>{what}</li>)}
       </ul>
-      {showEmailButton && <a className="btn" href="mailto:hello@elwood.technology"><EmailIcon /> hello@elwood.technology</a>}
+      {showEmailButton && <a className="btn" href="mailto:hello@elwood.technology"><EmailIcon /><span>hello@elwood.technology</span></a>}
     </div>
   </section>
 )
