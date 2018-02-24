@@ -1,13 +1,26 @@
-# gatsby-starter-default
-The default Gatsby starter
+<p align="center">
+  <a href="https://elwood.technology/">
+    <img alt="Elwood Technology, LLC" src="https://raw.githubusercontent.com/elwoodtechnology/elwood.technology/master/icon.png">
+  </a>
+</p>
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+<p align="center">
+  <a href="https://elwood.technology/"><strong>Elwood Technology</strong></a><br />
+  Software Development &amp; Consulting<br />
+  <small>Santa Monica, CA</small><br />
+</p>
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+<br />
 
-## Deploy
+## We should talk
+Free :pizza: on us! --
+<a href="mailto:hello@elwood.technology"><strong>hello@elwood.technology</strong></a>
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## What we do
+ * PHP
+ * React & React Native
+ * GraphQL
+ * Node.js
+ * iOS (Objective-C & Swift)
+ * Java & Android
+ * System Architecture

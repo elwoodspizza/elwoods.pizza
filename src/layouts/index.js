@@ -32,14 +32,35 @@ const TemplateWrapper = ({ children, ...props }) => (
     <Helmet
       title="Elwood Technology | Software Development &amp; Consulting | hello@elwood.technology | Santa Monica, California"
       meta={[
-        { name: 'description', content: 'Software Development &amp; Consulting | hello@elwood.technology | Santa Monica, California' },
-        { name: 'keywords', content: 'software, development, dev shop, consulting, node, ios, android, java, javascript' },
+        {
+          name: 'description',
+          content: 'Software Development &amp; Consulting | hello@elwood.technology | Santa Monica, California'
+        },
+        {
+          name: 'keywords',
+          content: 'software, development, dev shop, consulting, node, ios, android, java, javascript'
+        },
+        {
+          property: "og:title",
+          content: "Elwood Technology | Software Development &amp; Consulting"
+        },
+        {
+          property: "og:description",
+          content: "Santa Monica, California Software Development &amp; Consulting"
+        },
+        {
+          property: "og:type",
+          content: "website"
+        }
       ]}
       script={[
         {
           type: 'application/ld+json',
           innerHTML: JSON.stringify(ld)
         }
+      ]}
+      link={[
+        { rel: "apple-touch-icon", href: "/icon.png" }
       ]}
     />
     {children()}

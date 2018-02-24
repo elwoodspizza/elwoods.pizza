@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
 
 import EmailIcon from 'react-icons/lib/fa/envelope'
 import GithubIcon from 'react-icons/lib/fa/github'
@@ -43,6 +44,9 @@ const opts = [
 
 const Hello = () => (
   <main className="c-hello">
+    <Helmet
+      title="Say Hello to Elwood Technology | Software Development &amp; Consulting | hello@elwood.technology | Santa Monica, California"
+    />
     <section className="c-hello-main">
       <Link to="/" className="logo"><img src="https://elwood.technology/icon.png" alt="Pizza" /></Link>
       <aside>
