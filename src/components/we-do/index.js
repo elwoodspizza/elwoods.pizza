@@ -13,8 +13,8 @@ const whatWeDo = [
   'Java & Android',
   'System Architecture',
   'Content Management Systems',
-  'WordPress',
-  'Video Distribution'
+  'WordPress Customization',
+  'Video Management & Distribution'
 ]
 
 const WeDo = ({ children, showEmailButton }) => (
