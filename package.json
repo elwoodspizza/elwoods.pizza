@@ -12,7 +12,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "bluebird": "^3.5.1",
     "bootstrap": "^4.0.0",
+    "gatsby-plugin-google-analytics": "^1.0.19",
     "gatsby-plugin-sass": "^1.0.17",
     "gatsby-remark-copy-linked-files": "^1.5.28",
     "gatsby-remark-images": "^1.5.50",
