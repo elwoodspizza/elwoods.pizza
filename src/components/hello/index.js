@@ -9,6 +9,7 @@ import FacebookIcon from 'react-icons/lib/fa/facebook'
 import SlackIcon from 'react-icons/lib/fa/slack'
 import PhoneIcon from 'react-icons/lib/fa/phone'
 
+import { event } from '../../utils/ga'
 import Footer from '../footer'
 import WeDo from '../we-do'
 
@@ -18,27 +19,32 @@ const opts = [
   {
     url: 'mailto:hello@elwood.technology',
     text: 'Email Us',
-    icon: <EmailIcon />
+    icon: <EmailIcon />,
+    eventArgs: ['Hello', 'email']
   },
   {
     url: 'https://twitter.com/messages/compose?recipient_id=hello_elwood',
     text: 'DM on Twitter',
-    icon: <TwitterIcon />
+    icon: <TwitterIcon />,
+    eventArgs: ['Hello', 'twitter']
   },
   {
     url: 'http://m.me/1998492757088069',
     text: 'Message on Facebook',
-    icon: <FacebookIcon />
+    icon: <FacebookIcon />,
+    eventArgs: ['Hello', 'facebook']
   },
   {
     url: 'https://slackin-thhsxuaben.now.sh/',
     text: 'Join our Slack',
-    icon: <SlackIcon />
+    icon: <SlackIcon />,
+    eventArgs: ['Hello', 'slack']
   },
   {
     url: 'https://github.com/elwood-technology/hello',
     text: 'Fork us on GitHub',
-    icon: <GithubIcon />
+    icon: <GithubIcon />,
+    eventArgs: ['Hello', 'github']
   }
 ]
 
@@ -53,16 +59,22 @@ const Hello = () => (
         <h1><strong>Say Hello</strong> to Elwood Technology</h1>
         <h2>Tell us about your project...</h2>
         <ol className="list-unstyled">
-          {opts.map(({ url, text, icon }) => (
-            <li>
-              <a rel="noopener" target="_blank" href={url} className="btn btn-block btn-outline-secondary">
+          {opts.map(({ url, text, icon, eventArgs }) => (
+            <li key={`Hello-${url}`}>
+              <a
+                onClick={() => event(...eventArgs)}
+                rel="noopener"
+                target="_blank"
+                href={url}
+                className="btn btn-block btn-outline-secondary"
+              >
                 {icon}
                 <span>{text}</span>
               </a>
             </li>
           ))}
-          <li>
-            <a rel="noopener" href="tel:+14198625845" className="btn btn-block">
+          <li key="Hello-phone">
+            <a onClick={() => event('Hello', 'phone')} rel="noopener" href="tel:+14198625845" className="btn btn-block">
               <PhoneIcon />
               <span>Call Us (like it's 1999)</span>
             </a>

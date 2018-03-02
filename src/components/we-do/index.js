@@ -17,27 +17,33 @@ const whatWeDo = [
   'Video Management & Distribution'
 ]
 
-const WeDo = ({ children, showEmailButton }) => (
+const WeDo = ({ children, showEmailButton, onEmailClick }) => (
   <section className="c-we-do">
     <div>
       {children}
       <h4>Here are a few of the things we specialize in:</h4>
       <ul className="list-unstyled">
-        {whatWeDo.map(what => <li>{what}</li>)}
+        {whatWeDo.map(what => <li key={what}>{what}</li>)}
       </ul>
-      {showEmailButton && <a className="btn" href="mailto:hello@elwood.technology"><EmailIcon /><span>hello@elwood.technology</span></a>}
+      {showEmailButton && (
+        <a className="btn" onClick={onEmailClick} href="mailto:hello@elwood.technology">
+          <EmailIcon /><span>hello@elwood.technology</span>
+        </a>
+      )}
     </div>
   </section>
 )
 
 WeDo.propTypes = {
   children: PropTypes.node,
-  showEmailButton: PropTypes.bool
+  showEmailButton: PropTypes.bool,
+  onEmailClick: PropTypes.func
 }
 
 WeDo.defaultProps = {
   children: '',
-  showEmailButton: true
+  showEmailButton: true,
+  onEmailClick: () => {}
 }
 
 export default WeDo
