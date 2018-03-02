@@ -1,7 +1,7 @@
 {
   "name": "elwood-technology",
   "description": "Elwood Technology website",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "author": "Travis Kuhl <travis.kuhl@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.207",
