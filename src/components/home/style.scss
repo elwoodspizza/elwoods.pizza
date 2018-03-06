@@ -6,23 +6,67 @@ $logo-color: #222;
   font-family: 'Open Sans', sans-serif;
 
   &-header {
-    width: 100%;
-    height: 98vh;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 90vh;
+    max-width: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    margin: 0 auto;
 
-  h1 {
-    font-weight: 600;
-    color: $logo-color;
-    font-size: 2.5rem;
-  }
+    @media screen and (max-width: 800px) {
+      margin-bottom: 4rem;
+    }
 
-  h2 {
-    font-size: 1.3rem;
-    color: lighten($logo-color, 30);
-    margin: 0 0 2rem;
+    h1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-weight: 600;
+      color: $logo-color;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      position: relative;
+
+      span {
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        overflow: hidden;
+
+
+        &:before {
+          content: ' ';
+          position: absolute;
+          top: -20px;
+          left: 0;
+          width: 100%;
+          height: 10px;
+          box-shadow: #000 0 0 30px;
+          opacity: .2;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: lighten($logo-color, 20);
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: lighten($logo-color, 30);
+      margin: 0 0 3rem;
+    }
   }
 
   .btn {
@@ -30,19 +74,19 @@ $logo-color: #222;
     font-size: 1rem;
   }
 
-  &-main {
-    margin-right: 5rem;
-  }
-
   &-logo {
+    display: inline-block;
     transition: transform .2s ease-in;
     position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
 
     &:before {
       content: ' ';
       width: 10px;
       height: 10px;
-      background: red;
+      background: transparent;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -55,6 +99,7 @@ $logo-color: #222;
     img {
       position: relative;
       z-index: 2;
+      width: 100%;
     }
 
     &:hover {
@@ -63,19 +108,6 @@ $logo-color: #222;
   }
 
   @media screen and (max-width: 700px) {
-    &-header {
-      flex-direction: column;
-      text-align: center;
-      height: 90vh;
-    }
-    &-main {
-      margin-right: 0;
-      order: 2;
-      margin-top: 1rem;
-    }
-    &-logo {
-      order: 1;
-    }
 
     h1 {
       font-size: 1.9rem;
@@ -83,6 +115,21 @@ $logo-color: #222;
 
     .btn-hello {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    text-align: center;
+
+    h1 {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-size: 2.3rem;
+    }
+    h3 {
+      font-size: 1rem;
     }
   }
 }

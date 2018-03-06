@@ -17,13 +17,16 @@ const Home = () => (
   <main className="c-home">
     <header className="c-home-header">
       <div className="c-home-main">
-        <h1>Elwood Technology</h1>
-        <h2>Software Development &amp; Consulting</h2>
+
+        <h1>
+          Elwood Technology
+          <Link className="c-home-logo" onClick={() => event('Pizza', 'Home')} to="/pizza"><img src="https://elwood.technology/icon.png" alt="Pizza" /></Link>
+          <span />
+        </h1>
+        <h2>Software &amp; Digital Product Development Consultancy</h2>
+        <h3>We help our clients build great products &amp; grow great teams.</h3>
         <a onClick={onEmailClick('head')} className="btn btn-lg" href="mailto:hello@elwood.technology"><EmailIcon /><span>hello@elwood.technology</span></a>
         <Link onClick={() => event('Message', 'Home')} className="btn btn-lg btn-hello" to="/hello"><MessageIcon /></Link>
-      </div>
-      <div className="c-home-logo">
-        <Link onClick={() => event('Pizza', 'Home')} to="/pizza"><img src="https://elwood.technology/icon.png" alt="Pizza" /></Link>
       </div>
     </header>
     <WeDo onEmailClick={onEmailClick('wedo')}>
