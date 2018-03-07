@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://elwood.technology/"><strong>Elwood Technology</strong></a><br />
-  Software Development &amp; Consulting<br />
+  Software &amp; Digital Product Development Consultancy<br />
   <small>Santa Monica, CA</small><br />
 </p>
 
