@@ -19,9 +19,8 @@ const Home = () => (
       <div className="c-home-main">
 
         <h1>
-          Elwood Technology
           <Link className="c-home-logo" onClick={() => event('Pizza', 'Home')} to="/pizza"><img src="https://elwood.technology/icon.png" alt="Pizza" /></Link>
-          <span />
+          Elwood Technology          
         </h1>
         <h2>Software &amp; Digital Product Development Consultancy</h2>
         <h3>We help our clients build great products &amp; grow great teams.</h3>
