@@ -26,28 +26,6 @@ $logo-color: #333;
       font-size: 2.8rem;
       margin-bottom: 1rem;
       position: relative;
-
-      span {
-        display: block;
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 100%;
-        height: 10px;
-        overflow: hidden;
-
-
-        &:before {
-          content: ' ';
-          position: absolute;
-          top: -20px;
-          left: 0;
-          width: 100%;
-          height: 10px;
-          box-shadow: #000 0 0 30px;
-          opacity: .2;
-        }
-      }
     }
 
     h2 {
@@ -73,26 +51,13 @@ $logo-color: #333;
     display: inline-block;
     transition: transform .2s ease-in;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     position: relative;
     left: -10px;
-    margin-left: -50px;
+    top: -4px;
+    margin-left: -45px;
 
-
-    &:before {
-      content: ' ';
-      width: 10px;
-      height: 10px;
-      background: transparent;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -5px 0 0 -5px;
-      border-radius: 100%;
-      box-shadow: rgba(#999, .2) 0 0 1000px 100px;
-      z-index: 1;
-    }
 
     img {
       position: relative;
