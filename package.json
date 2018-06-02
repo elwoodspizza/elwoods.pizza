@@ -26,7 +26,7 @@
     "gatsby-plugin-sass": "^1.0.17",
     "gatsby-remark-copy-linked-files": "^1.5.28",
     "gatsby-remark-images": "^1.5.50",
-    "gatsby-remark-prismjs": "^1.2.15",
+    "gatsby-remark-prismjs": "^2.0.3",
     "gatsby-remark-responsive-iframe": "^1.4.17",
     "gatsby-remark-smartypants": "^1.4.11",
     "gatsby-source-filesystem": "^1.5.23",

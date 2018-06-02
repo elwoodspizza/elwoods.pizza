@@ -1,16 +1,17 @@
-.c-we-do {
+.c-how {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 8rem;
 
   &-main {
     border-radius: 2px;
+    width: 100%;
     max-width: 800px;
     z-index: 1;
     position: relative;
     padding: 2rem 2rem 1.5rem;
     margin-top: 0%;
-    text-align: center;
     background: #fff;
 
     &:before {
@@ -22,7 +23,7 @@
       width: 100%;
       height: 100%;
       transform: skewy(-1deg);
-      box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px;
+      box-shadow: rgba(#dde2e8, 0.9) 0 0 20px;
     }
 
     &:hover:before {
@@ -30,9 +31,27 @@
     }
   }
 
+  &-info {
+    display: flex;
+
+    &-price {
+      font-size: 0.8rem;
+      margin-left: 3rem;
+      text-align: right;
+
+      strong {
+        display: block;
+        font-size: 2rem;
+      }
+    }
+  }
+
   h3 {
     font-weight: 400;
     font-size: 1.6rem;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 
     small {
       font-weight: 300;
@@ -42,30 +61,6 @@
   h4 {
     font-size: 0.8rem;
     color: #666;
-  }
-
-  ul {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-top: solid 1px #eee;
-
-    li {
-      flex: 1 50%;
-      padding-bottom: 0.5rem;
-
-      &:last-child {
-        padding-bottom: 0;
-      }
-    }
-  }
-
-  h3,
-  h4,
-  ul {
-    text-align: left;
   }
 
   &:before {
@@ -81,9 +76,56 @@
     transform: skewy(-1deg);
   }
 
+  &-email {
+    position: relative;
+    display: flex;
+    padding: 0.75rem 0 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+
+    * {
+      z-index: 1;
+    }
+
+    span {
+      margin-left: 0.5rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:before {
+      content: " ";
+
+      transform: skewy(-1deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+  }
+
   @media screen and (max-width: 800px) {
     &-main {
       background: transparent;
+    }
+
+    &-info {
+      display: block;
+
+      &-price {
+        text-align: center;
+        margin-left: 0;
+      }
+    }
+
+    &-email {
+      display: none;
     }
 
     &:before {
