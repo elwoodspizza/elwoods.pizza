@@ -1,8 +1,8 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 
 import Hello from "../components/hello";
 
-class Page extends PureComponent {
+class Page extends Component {
   componentDidMount() {
     const script = document.createElement("script");
     script.src = "//js.hsforms.net/forms/shell.js";

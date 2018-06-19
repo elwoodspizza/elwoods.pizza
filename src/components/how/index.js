@@ -24,12 +24,18 @@ const How = ({ children, showEmailButton, onEmailClick }) => (
         How We Work... <small>it's pretty awesome!</small>
       </h3>
       <div className="c-how-info">
-        <p>
-          We bring together development, design, product management &amp; our
-          clients to create one integrated team, building amazing products. We
-          use only time &amp; materials contracts. One hourly rate, for all our
-          resources, provides our clients maximum flexibility and support.
-        </p>
+        <div>
+          <p>
+            We bring together development, design, product management &amp; our
+            clients to create one integrated team; focused on building amazing
+            products.
+          </p>
+          <p>
+            We are not fans of complicated, opaque contracts. We have one hourly
+            rate for all our resources, to provide our clients maximum
+            flexibility and support.
+          </p>
+        </div>
         <div className="c-how-info-price">
           <strong>
             $200<small>/hour</small>

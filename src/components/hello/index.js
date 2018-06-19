@@ -39,12 +39,6 @@ const opts = [
     text: "Join our Slack",
     icon: <SlackIcon />,
     eventArgs: ["Hello", "slack"]
-  },
-  {
-    url: "https://github.com/elwood-technology/hello",
-    text: "Fork us on GitHub",
-    icon: <GithubIcon />,
-    eventArgs: ["Hello", "github"]
   }
 ];
 

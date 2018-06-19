@@ -10,13 +10,19 @@ import WeDo from "../we-do";
 import How from "../how";
 import "./style.scss";
 
+import LowResImageSrc from "../../utils/low-res-image";
+
 const onEmailClick = place => () => {
   event("Email", `Home:${place}`);
 };
 
 const Home = () => (
   <main className="c-home">
-    <header className="c-home-header">
+    <header
+      className="c-home-header"
+      style={{ backgroundImage: `url("${LowResImageSrc}")` }}
+    >
+      <span className="c-home-header-img" />
       <div className="c-home-main">
         <h1>
           <Link
@@ -40,13 +46,6 @@ const Home = () => (
           <EmailIcon />
           <span>hello@elwood.technology</span>
         </a>
-        <Link
-          onClick={() => event("Message", "Home")}
-          className="btn btn-lg btn-hello"
-          to="/hello"
-        >
-          <MessageIcon />
-        </Link>
       </div>
     </header>
     <How />
