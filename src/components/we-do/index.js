@@ -6,11 +6,11 @@ import "./style.scss";
 
 const whatWeDo = [
   "React & React Native",
+  "Javascript & TypeScript",
   "PHP",
   "GraphQL",
   "Node.js",
-  "iOS (Objective-C & Swift)",
-  "Java & Android",
+  "App Development (Objective-C, Swift & Java)",
   "System Architecture",
   "Content Management Systems",
   "WordPress Customization",

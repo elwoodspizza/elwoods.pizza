@@ -28,10 +28,7 @@ const How = ({ children, showEmailButton, onEmailClick }) => (
           <p>
             We bring together development, design, product management &amp; our
             clients to create one integrated team; focused on building amazing
-            products.
-          </p>
-          <p>
-            We are not fans of complicated, opaque contracts. We have one hourly
+            products.  We have one hourly
             rate for all our resources, to provide our clients maximum
             flexibility and support.
           </p>
